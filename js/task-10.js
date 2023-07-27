@@ -4,7 +4,6 @@ function getRandomHexColor() {
     .padStart(6, 0)}`;
 }
 
-
 const elementsControls = document.querySelector('#controls')
 const listElementsControls = elementsControls.children
 
@@ -13,17 +12,12 @@ listElementsControls[2].addEventListener('click', destroyBoxes)
 
 const boxesEl = document.querySelector('#boxes')
 
-
-
-
-const allBoxes = [];
-
 function createBoxes(amount) {
 
 // передаємо значення введеного в інпут
   amount = listElementsControls[0].value;
   if (amount > 0 && amount <= 100) {
-    
+
 //  Функція створює стільки <div>, скільки вказано в amount і додає їх у div#boxes.
 
     for (let i = 0; i < amount; i += 1) {
@@ -35,7 +29,6 @@ function createBoxes(amount) {
       boxesEl.append(divElem)
     }
   }
-
 }
 
 function destroyBoxes() {
