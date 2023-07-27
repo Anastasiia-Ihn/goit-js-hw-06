@@ -8,7 +8,11 @@ validationInputEl.addEventListener('blur', lossFocus);
 
 function lossFocus() {
 
-    Number(validationInputEl.value.length) === Number(validationInputEl.dataset.length) ? validationInputEl.classList.add('valid') : validationInputEl.classList.add('invalid')
+    validationInputEl.value.length === Number(validationInputEl.dataset.length) ? validationInputEl.classList.add('valid') : validationInputEl.classList.add('invalid')
+   }
+
+
+
     // if (Number(validationInputEl.value.length) === Number(validationInputEl.dataset.length)) {
     //     validationInputEl.classList.add('valid');
     //     validationInputEl.classList.remove('invalid')
@@ -16,6 +20,3 @@ function lossFocus() {
     //     validationInputEl.classList.add('invalid');
     //     validationInputEl.classList.remove('valid')
     // }
-
-}
-

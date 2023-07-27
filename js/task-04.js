@@ -10,13 +10,17 @@ const incrementBtn = allElCounter[2]
 let counterValue = 0;
 
 
-decrementBtn.addEventListener('click', () => {
-   
-    counterValue -= 1;
-    valueEl.textContent = counterValue;
-})
+decrementBtn.addEventListener('click', chandeCountDecrem)
 
-incrementBtn.addEventListener('click', () => {
+function chandeCountDecrem() {
+       counterValue -= 1;
+    valueEl.textContent = counterValue;
+}
+
+
+incrementBtn.addEventListener('click', chandeCountIncrem)
+
+function chandeCountIncrem() {
     counterValue += 1;
     valueEl.textContent = counterValue;
-})
+}
